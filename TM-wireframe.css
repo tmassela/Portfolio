@@ -5,18 +5,33 @@
   body {
 
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 1rem;
+		font-size: 18px;
 		font-weight: 200;
         line-height: 1.65;
 	}
      
-  
-  nav,
-  footer {
-    padding: 1% 0;
-    background-color: #aaa;
+  h1{
+      font-size: 40px; 
+      line-height: 1.5;
+      font-weight: 200;
   }
+
+  h2{
+      font-size: 28px;
+      line-height: 1.5;
+      font-weight: 200;
+  }
+
+  h3{
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 200;
+    font-style: italic;
+}
+
   
+  
+  /*nav styling*/
   nav {
     position: fixed;
     top: 0;
@@ -24,23 +39,113 @@
     width: 100%;
     height: 50px;
     z-index: 10;
+    padding: 1% 0;
+    background-color: white;
+    margin-top: 10px;
     
   }
+
 
   ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-end;
     list-style-type: none;
-    text-align: right;
+    margin-right: 50px;
+   
+  }
+
+  a {
+
+    font-size: 18px;
+    max-width: 140px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    color: #333;
+    line-height: 80%;
+    margin-right: 10px;
+    
+  }
+  .funtext {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    color: #888;
+    line-height: 100%;
+    
+  }
+
+  i {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    float: left;
+    
+    fill: #999;
+  }
+
+  /* Popup container */
+.popup {
+	position: relative;
+	
+	cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: -300%;
+	left: 50%;
+	margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: -155%;
+	left: 50%;
+	margin-left: 5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
   }
 
   
   header {
     padding-top: 60px;
     padding-bottom: 2px;
+    
   }
   
   section {
@@ -51,55 +156,76 @@
 
   .row {
     display: flex;
-    height: 300px;
+    height: 350px;
+    margin-top: 50px;
   }
 
   .headerrow {
     display: flex;
     height: 500px;
-
+     
   }
   
-  .column {
-    flex: 50%;
-    border: 1px solid black;
-  }
-
-  
-  .description {
+  .column.text {
+      width: 75%;
       background-color: white;  
-      
-  }
-
-.text {
-    margin-left: 50px;
-}
-  
-
-  .transition {
-      margin-left: 0;
-      height: 50px;
-      margin-left: 50px;
+      padding-top: 40px;
+      padding-left: 50px;
+      padding-right: 50px;    
   }
 
   .text p {
-    font-size: 1.25rem;
+    font-size: 18px;
     font-weight: lighter;
   }
 
-  .image {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    overflow: hidden
-}
-.fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+  .column.image {
+    
+    
     
 }
 
 
-  
-   
+.button {
+    border: 1px solid darkgrey;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: 0.125em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    max-width: 20rem;
+    height: 3.75em;
+    line-height: 3.75em;
+    border-radius: 3.75em;
+    padding: 0 2.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+     
+    
+}
+
+footer {
+    padding: 1% 0;
+    background-color: white;
+    margin-top: 50px;
+    line-height: 10px;
+    height: 350px;
+    text-align: center;
+    border-top: 1px solid black;
+
+
+  }
+footer ul {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+    
