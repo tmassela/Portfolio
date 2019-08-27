@@ -10,6 +10,7 @@
 </head>
 
 <body>
+        <a name="top"></a>
         <nav class="nav">
                 <div>
                     <ul class="fa-logos">
@@ -32,8 +33,8 @@
 
     <main role="main">
         <header role="banner">
-                <div class="headerrow">
-                    <div class="column left text">
+                <div class="row top">
+                    <div class="column text intro">
                             <h1>Hi.</h1>
                             <h2>I'm Tiffany Massela</h2>
                                 <p>I am a web developer with a passion for creating smart apps in pretty little packages.  
@@ -47,32 +48,47 @@
                                     I would love to hear from you about your new project ideas.
                                 </p>  
                                 
-                                <h3> Here's a peek at my past projects...<h3>
-                    
-
+                                <h3> Here's a peek at what I do...<h3>
                     </div>
-                    <div class="column image">
-                        <img src="headshot3.jpg" alt="headshot">
-                    </div>
-
-                    
+                    <div class="column headshot"><img src="Headshot3.jpg"></div>      
                 </div>  
         </header>
 
         
+        <section>
+            <div class="row">
+                <div class="column text">
+                            <h3>UI/UX Development</h3>
+                            <p>This website was designed with the following tech stack: HTML5, CSS and Javascript.  
+                                This is an active website designed for a client who sits on the executive board of this
+                                non-for-profit business. The website is maintained on a dedicated server using Fetch. 
+                                It is updated routinely given feedback from my client and the websites users.</p>
+                            
+                </div>
+                <div class="column image"><img src="DustinsPlace.jpg">
+                    <ul>
+                        <li><a href=" https://www.dustinsplace.org/" class="button" target="_blank">Live Version</a></li>
+                        <li><a href="https://github.com/tmassela/DustinsPlace" class="button" target="_blank"> Github Repo</a></li>
+                    </ul>
+                </div>
+            </div>  
+    </section>  
 
         <section>
                 <div class="row">
-                  <div class="column image"><img src="TravelQuizApp.jpg"></div>
-                  <div class="column description text">
+                  <div class="column image"><img src="TravelQuizApp.jpg">
+                    <ul>
+                        <li><a href="https://tmassela.github.io/Travel-Quiz-App/" class="button" target="_blank"> Live Version</a></li>
+                        <li><a href="https://github.com/tmassela/myPortfolio" class="button" target="_blank"> Github Repo</a></li>
+                    </ul>
+                </div>
+                  <div class="column text">
                             <h3>Travel Quiz App</h3>
                             <p>This is an application created with HTML5, CSS, and Javascript.  It's
                                 a quiz that keeps score as you go and provides feedback at the end.
                                 Concepts: UX/UI design, object-oriented programming, a11y accessibility.
                             </p>
-                            <ul>
-                                <li><a href="https://tmassela.github.io/Travel-Quiz-App/" class="button">Live Version</a></li>
-                            </ul>
+                            
                     </div>
                 </div>  
         </section>          
@@ -81,18 +97,21 @@
         <section>
                 <div class="row">
                     <div class="column text">
-                                <h3>Which Weekday</h3>
-                                <p>This is a project originally created in Objective C.  I've recently 
-                                    added an interface to make it more functional.  The user can enter 
-                                    any date in the past or future to determine which day of the week 
-                                    it falls on.  A fun way to determine on which day you were born or
-                                    which day a future holiday may fall on.  
-                                </p>
-                                <ul>
-                                        <li><a href="https://tmassela.github.io/Travel-Quiz-App/" class="button">Live Version</a></li>
-                                </ul>
+                                <h3>Dinner Genius App</h3>
+                                <p>The motivation behind this app was helping to find dinner recipes based on
+                                    ingredients the user already has on hand.  A specific calorie range can be 
+                                    added as a filter.  Ten results are displayed along with a suggested 
+                                    wine-pairing.  The app uses the Fetch API to make an AJAX request to multiple
+                                    APIs (Edeman and Spoonacular).  Tech stack includes: HTML, CSS, Javascript, and
+                                    jQuery.</p>
+                                
                     </div>
-                    <div class="column image"><img src="Placeholder.jpg"></div>
+                    <div class="column image"><img src="Dinner Genius App Screen Shot.jpg">
+                        <ul>
+                            <li><a href=" https://tmassela.github.io/Dinner-Genius-App/" class="button" target="_blank">Live Version</a></li>
+                            <li><a href="https://github.com/tmassela/Dinner-Genius-App" class="button" target="_blank"> Github Repo</a></li>
+                        </ul>
+                    </div>
                 </div>  
         </section>  
         
@@ -103,24 +122,26 @@
         <h2>Let's build something great!</h2>
         <p>Contact Me: </p>
        
-                <ul class="fa-logos">
+        <ul class="fa-logos footerinfo">
                         
-                        <li><a href="https://www.linkedin.com/in/tiffany-massela-63648810a/" target="_blank"><i class="fab fa-linkedin fa-1.75x"></i>
-                            <div> LinkedIn<span class="funtext">let's connect!</span></div></a></li>
-                        <li><a href="mailto:tiffanymassela@gmail.com"><i class="far fa-envelope fa-1.75x"></i>
-                            <div> Email<span class="funtext">write me</span></div></a></li>
-                        <li><a href="#" class="popup" onclick="myFunction()"><i class="fas fa-mobile-alt fa-1.75x"></i>
-                            <div> Mobile
-                                <span class="popuptext" id="myPopup">PH: 317.737.4293</span>
-                                <span class="funtext">call or text</span>
-                            </div></a></li>
-                        <li><a href="#"><i class="fas fa-coffee fa-1.75x"></i>
-                            <div>&nbspCoffee?<span class="funtext">of course!</span></div></a></li>
-                    </ul>
+            <li><a href="https://www.linkedin.com/in/tiffany-massela-63648810a/" target="_blank"><i class="fab fa-linkedin fa-1.75x"></i>
+                <div> LinkedIn<span class="funtext">let's connect!</span></div></a></li>
+            <li><a href="mailto:tiffanymassela@gmail.com"><i class="far fa-envelope fa-1.75x"></i>
+                <div> Email<span class="funtext">write me</span></div></a></li>
+            <li><a href="#" class="popup" onclick="myFunction()"><i class="fas fa-mobile-alt fa-1.75x"></i>
+                <div> Mobile
+                        <span class="popuptext" id="myPopup">PH: 317.737.4293</span>
+                        <span class="funtext">call or text</span>
+                </div></a></li>
+            <li><a href="#"><i class="fas fa-coffee fa-1.75x"></i>
+                <div>&nbspCoffee?<span class="funtext">of course!</span></div></a></li>
+        </ul>
 
-                    <ul>
-                            <li><a href="#nav" class="button">Back to the Top</a></li>
-                    </ul>
+          
+        
+
+        <a href="#top" class="button">Back to the Top</a>
+                    
             
     </footer>
     <script src="TM-Wireframe.js"></script>
